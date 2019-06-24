@@ -8,10 +8,11 @@ pipeline{
         {
 	 sh 'sudo rm -rf test-dir'	
          sh 'sudo mkdir test-dir'
-		 sh "echo 'Installing The Required Packages...'"
-         sh 'sudo apt install -y npm'
+	 sh "echo 'Installing The Required Packages...'"
+         sh 'sudo apt install -y nodejs'
+	 sh 'sudo apt install -y npm'
          sh 'sudo npm install -g react-native-cli '
-         sh 'sudo install nodejs-legacy'
+         sh 'install nodejs-legacy'
          sh 'npm install'
          sh 'install linuxbrew-wrapper'
          sh 'brew install watchman'
