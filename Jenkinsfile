@@ -6,6 +6,7 @@ pipeline{
       {
         steps
         {
+	 sh 'rm -rf test-dir'	
          sh 'mkdir test-dir'
 		 sh "echo 'Installing The Required Packages...'"
         
