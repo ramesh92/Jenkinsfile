@@ -10,7 +10,7 @@ pipeline{
          sh 'mkdir test-dir'
 		 sh "echo 'Installing The Required Packages...'"
         
-         sh 'sudo npm install -g react-native-cli '
+         sh 'npm install -g react-native-cli '
          sh 'install nodejs-legacy'
          sh 'npm install'
          sh 'install linuxbrew-wrapper'
