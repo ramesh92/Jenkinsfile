@@ -6,20 +6,10 @@ pipeline{
       {
         steps
         {
-	 sh 'sudo rm -rf test-dir'	
-         sh 'sudo mkdir test-dir'
+	 
 	 sh "echo 'Installing The Required Packages...'"
-         sh 'sudo apt install -y nodejs'
-	 sh 'sudo apt install -y npm'
-         sh 'sudo npm install -g react-native-cli '
-         sh 'install nodejs-legacy'
-         sh 'npm install'
-         sh 'install linuxbrew-wrapper'
-         sh 'brew install watchman'
-         sh 'install build-essential'
-         sh 'install android-tools-adb'
-         sh 'mkdir -p ~/.gradle && echo "org.gradle.daemon=false" >> ~/.gradle/gradle.properties ' 
-		
+         sh 'sudo apt update'
+	 sh 'sudo apt install default-jdk'
         }
       } 
       stage('Build')
